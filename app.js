@@ -1,6 +1,8 @@
 'use strict';
 
-var name = prompt('what is your name?')
+var name = prompt('what is your name?');
+name = name.toLowerCase();
+
 if (name === 'sam' || name === 'mercedes') {
     document.write('Welcome back, gangsta!')
 } else {
