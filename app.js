@@ -64,3 +64,42 @@ if (favColor === 'yes') {
     // console.log('try again...');
     alert('try again, please answer yes/no');
 }
+
+// GUESSING RANDOM #
+
+var randomNumber = getRandomIntInclusive()
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(1);
+    max = Math.floor (10);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+var i = 4
+do {
+var numberGuess = prompt('Can you guess what number I\'m thinking? (4 tries) (Hint: it\'s between 1-10 inclusive)' + randomNumber)
+if (parseInt(numberGuess, 10) > randomNumber){
+    alert('your guess is too high, try again!')
+} else if (parseInt(numberGuess, 10) < randomNumber){
+    alert('your guess is too low, try again!')
+} else {
+    alert('Congrats! You guessed correctly')
+}
+i--
+} while (numberGuess !== randomNumber.toString(10) && i !== 0)
+
+// GUESSING FAV FOOD 
+
+var j = 6
+var favFoods = ['chicken', 'salmon', 'peanut butter', 'grass'] 
+console.log(favFoods[0])
+console.log(favFoods[1])
+console.log(favFoods[2])
+console.log(favFoods[3])
+
+do {
+    var askFoods = prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');
+    j--;
+    alert('you are on guess number' + j)
+if (askFoods === favFoods[0]){
+    alert('chicken')}
+} while (askFoods !== favFoods[0] || askFoods !== favFoods[1] || askFoods !== favFoods[2] || askFoods !== favFoods[3])
