@@ -89,17 +89,18 @@ i--
 
 // GUESSING FAV FOOD 
 
-var j = 6
+
 var favFoods = ['chicken', 'salmon', 'peanut butter', 'grass'] 
-console.log(favFoods[0])
-console.log(favFoods[1])
-console.log(favFoods[2])
-console.log(favFoods[3])
+console.log(favFoods[0]);
+console.log(favFoods[1]);
+console.log(favFoods[2]);
+console.log(favFoods[3]);
+var j = 6
 
 do {
     var askFoods = prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');
+    console.log(askFoods)
     j--;
     alert('you are on guess number' + j)
-if (askFoods === favFoods[0]){
-    alert('chicken')}
-} while (askFoods !== favFoods[0] || askFoods !== favFoods[1] || askFoods !== favFoods[2] || askFoods !== favFoods[3])
+} while (askFoods !== favFoods[0] && askFoods !== favFoods[1] && askFoods !== favFoods[2] && askFoods !== favFoods[3] && j>0);
+

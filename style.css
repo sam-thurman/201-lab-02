@@ -1,9 +1,11 @@
-body, header {
-    text-align: center;
-    background-color: rgb(245, 245, 245);
-    border-radius: 10px
-}
 body {
     background-color: rgb(255, 255, 255);
 }
+
+header {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
 
