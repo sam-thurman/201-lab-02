@@ -27,7 +27,8 @@ if (earlAge === 'yes') {
     console.log(scoreCounter);
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');}
+    alert('try again, please answer yes/no');
+    prompt('Do you think Earl is old enough to LEGALLY buy alcohol?');}
 
 var birthplace = prompt('Was Earl born in Seattle?');
 birthplace = birthplace.toLowerCase();
@@ -41,7 +42,8 @@ if (birthplace === 'yes') {
     console.log(scoreCounter);
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');}
+    alert('try again, please answer yes/no');
+    prompt('Was Earl born in Seattle?');}
 
 var siblings = prompt('Does Earl have any siblings?');
 siblings = siblings.toLowerCase();
@@ -55,7 +57,8 @@ if (siblings === 'yes') {
     alert('Wrong! Earl has a brother named Dewie, and a sister named Nelly!');
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');}
+    alert('try again, please answer yes/no');
+    prompt('Does Earl have any siblings?');}
 
 var favColor = prompt('Is Earl\'s favorite color black?');
 favColor = favColor.toLowerCase();
@@ -69,7 +72,8 @@ if (favColor === 'yes') {
     alert('Wrong! Of course black is his favorite color');
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');}
+    alert('try again, please answer yes/no');
+    prompt('Is Earl\'s favorite color black?')}
 
 // GUESSING RANDOM #
 
@@ -86,10 +90,10 @@ do {
     console.log(randomNumber)
     
     if (parseInt(numberGuess, 10) > randomNumber){
-        alert('your guess is too high, try again!');
+        alert('your guess is too high! you have ' + i + ' guesses left');
     } else if (parseInt(numberGuess, 10) < randomNumber){
-        alert('your guess is too low, try again!');
-    } else {
+        alert('your guess is too low! you have ' + i + ' guesses left');
+    }else {
         alert('Congrats! You guessed correctly');
         scoreCounter++;
         console.log(scoreCounter);}
