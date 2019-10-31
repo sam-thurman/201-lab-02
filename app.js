@@ -27,9 +27,7 @@ if (earlAge === 'yes') {
     console.log(scoreCounter);
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');
-    prompt('Do you think Earl is old enough to LEGALLY buy alcohol?');
-}
+    alert('try again, please answer yes/no');}
 
 var birthplace = prompt('Was Earl born in Seattle?');
 birthplace = birthplace.toLowerCase();
@@ -43,9 +41,7 @@ if (birthplace === 'yes') {
     console.log(scoreCounter);
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');
-    prompt('Was Earl born in Seattle?');
-}
+    alert('try again, please answer yes/no');}
 
 var siblings = prompt('Does Earl have any siblings?');
 siblings = siblings.toLowerCase();
@@ -59,9 +55,7 @@ if (siblings === 'yes') {
     alert('Wrong! Earl has a brother named Dewie, and a sister named Nelly!');
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');
-    prompt('Does Earl have any siblings?');
-}
+    alert('try again, please answer yes/no');}
 
 var favColor = prompt('Is Earl\'s favorite color black?');
 favColor = favColor.toLowerCase();
@@ -75,9 +69,7 @@ if (favColor === 'yes') {
     alert('Wrong! Of course black is his favorite color');
 } else {
     // console.log('try again...');
-    alert('try again, please answer yes/no');
-    prompt('Is Earl\'s favorite color black?');
-}
+    alert('try again, please answer yes/no');}
 
 // GUESSING RANDOM #
 
@@ -90,7 +82,8 @@ function getRandomIntInclusive(min, max) {
 
 var i = 4
 do {
-    var numberGuess = prompt('Can you guess what number I\'m thinking? (4 tries) (Hint: it\'s between 1-10 inclusive)' + randomNumber)
+    var numberGuess = prompt('Can you guess what number I\'m thinking? (4 tries) (Hint: it\'s between 1-10 inclusive)')
+    console.log(randomNumber)
     
     if (parseInt(numberGuess, 10) > randomNumber){
         alert('your guess is too high, try again!');
