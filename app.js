@@ -13,6 +13,8 @@ hawksFan = hawksFan.toLowerCase();
 if (hawksFan === 'yes') {
 
     document.write('  Go Hawks!');
+    scoreCounter++;
+    console.log(scoreCounter);
 
 } else {
     document.write('oh...');
@@ -117,36 +119,29 @@ question4();
 function question5() {
     var randomNumber = getRandomIntInclusive()
     function getRandomIntInclusive(min, max) {
-
         min = Math.ceil(1);
         max = Math.floor(10);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-
-    var i = 4
+    numberGuess = parseInt(numberGuess);
+    var guesses = 4
     do {
-
         var numberGuess = prompt('Can you guess what number I\'m thinking? (4 tries) (Hint: it\'s between 1-10 inclusive)')
         console.log(randomNumber)
 
-        if (parseInt(numberGuess, 10) > randomNumber) {
-
-            alert('your guess is too high! you have ' + i + ' guesses left');
-
-        } else if (parseInt(numberGuess, 10) < randomNumber) {
-
-            alert('your guess is too low! you have ' + i + ' guesses left');
-
+        if (numberGuess > randomNumber) {
+            alert('your guess is too high! you have ' + guesses + ' guesses left');
+            guesses--;
+        } else if (numberGuess < randomNumber) {
+            alert('your guess is too low! you have ' + guesses + ' guesses left');
+            guesses--;
         } else {
-
             alert('Congrats! You guessed correctly');
             scoreCounter++;
             console.log(scoreCounter);
         }
 
-        i--;
-
-    } while (numberGuess !== randomNumber.toString(10) && i !== 0)
+    } while (parseInt(numberGuess) !== randomNumber && guesses > 0)
 }
 question5();
 
@@ -160,6 +155,12 @@ function question6() {
     console.log(favFoods[2]);
     console.log(favFoods[3]);
     var j = 6;
+    for(var i=0; i < favFoods.length; i++){
+        if(askFoods === favFoods[i]){
+            
+        }
+    }
+    
     do {
 
         var askFoods = prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');
@@ -187,4 +188,4 @@ question6();
 
 //score count!
 
-alert('Great job! You scored ' + scoreCounter.toString(10) + ' out of 6!!! Come back any time and try again :)');
+alert('Great job! You scored ' + scoreCounter.toString(10) + ' out of 7!!! Come back any time and try again :)');
