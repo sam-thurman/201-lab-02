@@ -1,11 +1,11 @@
-// 'use strict'
+'use strict'
 // // name prompt
 
 // var name = prompt('what is your name?');
 // name = name.toLowerCase();
 // document.write('Welcome, ' + name + '!')
 
-// // hawks q
+// hawks q
 
 // var hawksFan = prompt('You are a Seahawks fan, right?');
 // hawksFan = hawksFan.toLowerCase();
