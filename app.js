@@ -20,7 +20,7 @@
 //     document.write('oh...');
 // }
 
-var scoreCounter = 0
+// var scoreCounter = 0
 
 // // Q1
 
@@ -147,25 +147,25 @@ var scoreCounter = 0
 
 // GUESSING FAV FOOD 
 
-function question6() {
-    var favFoods = ['chicken', 'salmon', 'peanut butter', 'grass'];
-    var askFoods = prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');   
-    console.log(favFoods[0]);
-    console.log(favFoods[1]);
-    console.log(favFoods[2]);
-    console.log(favFoods[3]);
-    var i = 6;
-    for(var i=0; i < favFoods.length; i++){
-        if(askFoods === favFoods[i]){
-            alert('Congrats! You got one!');
-            scoreCounter++;
-            console.log(scoreCounter); 
-        } else if(askFoods !== favFoods[i]){
-            alert('try again')
-            prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');
-        }
-    }
-}
+// function question6() {
+//     var favFoods = ['chicken', 'salmon', 'peanut butter', 'grass'];
+//     var askFoods = prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');   
+//     console.log(favFoods[0]);
+//     console.log(favFoods[1]);
+//     console.log(favFoods[2]);
+//     console.log(favFoods[3]);
+//     var i = 6;
+//     for(var i=0; i < favFoods.length; i++){
+//         if(askFoods === favFoods[i]){
+//             alert('Congrats! You got one!');
+//             scoreCounter++;
+//             console.log(scoreCounter); 
+//         } else if(askFoods !== favFoods[i]){
+//             alert('try again')
+//             prompt('Earl has lots of favorite foods! Can you guess one of them? (6 tries)');
+//         }
+//     }
+// }
     
 //     do {
 
@@ -190,8 +190,8 @@ function question6() {
 
 //     } while (askFoods !== favFoods[0] && askFoods !== favFoods[1] && askFoods !== favFoods[2] && askFoods !== favFoods[3] && j > 0);
 // }
-question6();
+//question6();
 
 //score count!
 
-alert('Great job! You scored ' + scoreCounter.toString(10) + ' out of 7!!! Come back any time and try again :)')
+//alert('Great job! You scored ' + scoreCounter.toString(10) + ' out of 7!!! Come back any time and try again :)')
