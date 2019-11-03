@@ -1,21 +1,30 @@
 #cat {
     float: center;
     border-radius: 250px;
+    
 }
 #lists{
     text-align: left;
 }
 header {
     text-align: center;
-    background-color: rgb(250, 250, 250);
+    background-color: white;
     border-radius: 10px;
+    margin: 40px;
+    padding: 15px;
 }
-
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 255);
     text-align: center;
     padding: 30px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Arial, sans-serif;
 }
-
-
+article{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+p {
+    background-color: white;
+    padding: 30px;
+}
