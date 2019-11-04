@@ -178,4 +178,4 @@ question7();
 
 //score count!
 
-alert('Great job! You scored ' + scoreCounter.toString(10) + ' out of 7!!! Come back any time and try again :)')
+alert('Great job! You scored ' + scoreCounter.toString(10) + ' out of 7!!! Come back any time and try again :)');
